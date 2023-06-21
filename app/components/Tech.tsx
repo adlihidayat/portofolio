@@ -7,6 +7,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Grid } from "swiper";
+import Image from "next/image";
 
 function Tech() {
   return (
@@ -46,7 +47,7 @@ function Tech() {
                 href="https://nextjs.org/"
                 className="h-[250px] w-[250px] bg-[#0F0C31] rounded-xl flex cursor-pointer justify-center items-center group"
               >
-                <img
+                <Image
                   src="next.svg"
                   alt=""
                   className="svg-fill w-[80%] group-hover:w-[90%] duration-200 ease-in-out"
@@ -61,7 +62,7 @@ function Tech() {
                 href="https://react.dev/"
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
-                <img
+                <Image
                   src="react.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -76,7 +77,7 @@ function Tech() {
                 href="https://tailwindcss.com/"
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
-                <img
+                <Image
                   src="tailwind.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -91,7 +92,7 @@ function Tech() {
                 href="https://developer.mozilla.org/en-US/docs/Web/javascript"
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
-                <img
+                <Image
                   src="javascript.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -106,7 +107,7 @@ function Tech() {
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML"
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
-                <img
+                <Image
                   src="html.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -121,7 +122,7 @@ function Tech() {
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
-                <img
+                <Image
                   src="css.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"

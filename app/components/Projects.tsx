@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 function Projects() {
@@ -35,13 +36,13 @@ function Projects() {
           onClick={() => setDetails(1)}
           className=" animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
         >
-          <img src="/nameasy.png" className=" h-[100%] object-cover" alt="" />
+          <Image src="/nameasy.png" className=" h-[100%] object-cover" alt="" />
         </div>
         <div
           onClick={() => setDetails(2)}
           className=" animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
         >
-          <img
+          <Image
             src="/glassmorphism.png"
             className=" h-[100%] object-cover"
             alt=""
@@ -51,13 +52,21 @@ function Projects() {
           onClick={() => setDetails(3)}
           className=" animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
         >
-          <img src="/salfiyah.png" className=" h-[100%] object-cover" alt="" />
+          <Image
+            src="/salfiyah.png"
+            className=" h-[100%] object-cover"
+            alt=""
+          />
         </div>
         <div
           onClick={() => setDetails(4)}
           className=" animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
         >
-          <img src="/tictactoe.png" className=" h-[100%] object-cover" alt="" />
+          <Image
+            src="/tictactoe.png"
+            className=" h-[100%] object-cover"
+            alt=""
+          />
         </div>
       </div>
       {details !== 0 && (

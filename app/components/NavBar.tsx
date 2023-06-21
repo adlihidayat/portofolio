@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 type Props = {
@@ -78,7 +79,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           >
             copied!
           </p>
-          <img
+          <Image
             src="/gmail.svg"
             alt="gmail"
             onClick={copyEmail}
@@ -88,7 +89,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           />
         </a>
         <a className="w-7 h-7" href="https://www.instagram.com/adlihdyt/">
-          <img
+          <Image
             src="/instagram.svg"
             alt="instagram"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${
@@ -97,7 +98,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           />
         </a>
         <a className="w-7 h-7" href="https://github.com/adlihidayat">
-          <img
+          <Image
             src="/github.svg"
             alt="github"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${
@@ -109,7 +110,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           className="w-7 h-7"
           href="https://www.linkedin.com/in/dhiya-adli-hidayat-3308b824a/"
         >
-          <img
+          <Image
             src="/linkedin.svg"
             alt="linkedin"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${
