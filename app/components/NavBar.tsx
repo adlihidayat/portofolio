@@ -1,5 +1,9 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import instagram from "../../public/instagram.svg";
+import linkedin from "../../public/linkedIn.svg";
+import github from "../../public/github.svg";
+import gmail from "../../public/gmail.svg";
 
 type Props = {
   Home: (event: React.MouseEvent<HTMLElement>) => void;
@@ -82,7 +86,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           <Image
             width={7}
             height={7}
-            src="/gmail.svg"
+            src={gmail}
             alt="gmail"
             onClick={copyEmail}
             className={`w-7 h-7 ease-in-out cursor-pointer ${
@@ -92,7 +96,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
         </a>
         <a className="w-7 h-7" href="https://www.instagram.com/adlihdyt/">
           <Image
-            src="/instagram.svg"
+            src={instagram}
             width={7}
             height={7}
             alt="instagram"
@@ -105,7 +109,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           <Image
             width={7}
             height={7}
-            src="/github.svg"
+            src={github}
             alt="github"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${
               position === 4 && "hidden"
@@ -119,7 +123,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           <Image
             width={7}
             height={7}
-            src="/linkedin.svg"
+            src={linkedin}
             alt="linkedin"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${
               position === 4 && "hidden"
