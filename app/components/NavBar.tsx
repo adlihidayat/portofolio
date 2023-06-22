@@ -84,6 +84,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
             copied!
           </p>
           <Image
+            loading="eager"
             width={28}
             height={28}
             src={gmail}
@@ -96,6 +97,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
         </a>
         <a className="w-7 h-7" href="https://www.instagram.com/adlihdyt/">
           <Image
+            loading="eager"
             src={instagram}
             width={28}
             height={28}
@@ -107,6 +109,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
         </a>
         <a className="w-7 h-7" href="https://github.com/adlihidayat">
           <Image
+            loading="eager"
             width={28}
             height={28}
             src={github}
@@ -121,6 +124,7 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           href="https://www.linkedin.com/in/dhiya-adli-hidayat-3308b824a/"
         >
           <Image
+            loading="eager"
             width={28}
             height={28}
             src={linkedin}
