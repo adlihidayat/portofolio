@@ -11,10 +11,6 @@ import Contacts from "./components/Contacts";
 export default function Home() {
   const [position, setPosition] = useState(1);
 
-  useEffect(() => {
-    console.log(position);
-  }, [position]);
-
   return (
     <main className=" h-screen w-screen  font-inter">
       <PageNumber position={position} />

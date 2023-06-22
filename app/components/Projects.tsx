@@ -34,11 +34,10 @@ function Projects() {
       <div className="  flex justify-center space-x-1 md:space-x-2 w-[80%] sm:w-[500px] md:w-[600px] xl:w-[700px] 2xl:w-[900px]">
         <div
           onClick={() => setDetails(1)}
-          className=" animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
+          className="relative animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
         >
           <Image
-            width={5000}
-            height={7}
+            fill={true}
             src="/nameasy.png"
             className=" h-[100%] object-cover"
             alt=""
@@ -46,11 +45,10 @@ function Projects() {
         </div>
         <div
           onClick={() => setDetails(2)}
-          className=" animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
+          className="relative animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
         >
           <Image
-            width={5000}
-            height={7}
+            fill={true}
             src="/glassmorphism.png"
             className=" h-[100%] object-cover"
             alt=""
@@ -58,11 +56,10 @@ function Projects() {
         </div>
         <div
           onClick={() => setDetails(3)}
-          className=" animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
+          className="relative animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
         >
           <Image
-            width={5000}
-            height={7}
+            fill={true}
             src="/salfiyah.png"
             className=" h-[100%] object-cover"
             alt=""
@@ -70,11 +67,10 @@ function Projects() {
         </div>
         <div
           onClick={() => setDetails(4)}
-          className=" animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
+          className=" relative animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
         >
           <Image
-            width={5000}
-            height={7}
+            fill={true}
             src="/tictactoe.png"
             className=" h-[100%] object-cover"
             alt=""
@@ -84,16 +80,16 @@ function Projects() {
       {details !== 0 && (
         <div className="fixed -top-10 z-40 w-screen h-screen md:-left-20 ">
           <div className=" z-50 bg-[#282828] md:bg-transparent md:bg-gradient-to-b md:from-transparent md:to-black absolute bottom-0 w-screen h-auto flex flex-col md:flex-row md:justify-center md:space-x-10 space-y-5 items-center pt-16 pb-10 rounded-tl-[40px] rounded-tr-[40px] md:rounded-tl-[0px] md:rounded-tr-[0px]">
-            <div className=" bg-slate-400 w-[80%] md:w-[400px] h-[200px] ">
+            <div className=" bg-slate-400 w-[80%] md:w-[400px] h-[180px] md:h-[200px] ">
               <video autoPlay loop src={vid[details]} />
             </div>
             <div className="flex flex-col space-y-3 w-[80%] text-[#F7F7F7] md:w-[500px] xl:w-[600px]">
-              <h1 className=" text-2xl font-semibold">
+              <h1 className=" text-xl md:text-2xl font-semibold">
                 {title[details]} (PERSONAL PROJECT)
               </h1>
               <p>{desc[details]}</p>
               <a href={web[details]}>
-                <button className=" py-2 w-[115px] bg-[#FF4A4A] sm:hover:bg-[#0F0C31] duration-300 ease-in-out   rounded-full font-semibold">
+                <button className=" text-sm md:text-base py-[6px] md:py-2 w-[100px] md:w-[115px] bg-[#FF4A4A] sm:hover:bg-[#0F0C31] duration-300 ease-in-out   rounded-full font-semibold">
                   VISIT SITE
                 </button>
               </a>
