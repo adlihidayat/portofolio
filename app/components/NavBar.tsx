@@ -80,6 +80,8 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
             copied!
           </p>
           <Image
+            width={7}
+            height={7}
             src="/gmail.svg"
             alt="gmail"
             onClick={copyEmail}
@@ -91,6 +93,8 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
         <a className="w-7 h-7" href="https://www.instagram.com/adlihdyt/">
           <Image
             src="/instagram.svg"
+            width={7}
+            height={7}
             alt="instagram"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${
               position === 4 && "hidden"
@@ -99,6 +103,8 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
         </a>
         <a className="w-7 h-7" href="https://github.com/adlihidayat">
           <Image
+            width={7}
+            height={7}
             src="/github.svg"
             alt="github"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${
@@ -111,6 +117,8 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
           href="https://www.linkedin.com/in/dhiya-adli-hidayat-3308b824a/"
         >
           <Image
+            width={7}
+            height={7}
             src="/linkedin.svg"
             alt="linkedin"
             className={`w-7 h-7 ease-in-out ${position === 1 && "svg-fill"} ${

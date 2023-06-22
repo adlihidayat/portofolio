@@ -48,6 +48,8 @@ function Tech() {
                 className="h-[250px] w-[250px] bg-[#0F0C31] rounded-xl flex cursor-pointer justify-center items-center group"
               >
                 <Image
+                  width={7}
+                  height={7}
                   src="next.svg"
                   alt=""
                   className="svg-fill w-[80%] group-hover:w-[90%] duration-200 ease-in-out"
@@ -63,6 +65,8 @@ function Tech() {
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
                 <Image
+                  width={7}
+                  height={7}
                   src="react.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -78,6 +82,8 @@ function Tech() {
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
                 <Image
+                  width={7}
+                  height={7}
                   src="tailwind.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -93,6 +99,8 @@ function Tech() {
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
                 <Image
+                  width={7}
+                  height={7}
                   src="javascript.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -108,6 +116,8 @@ function Tech() {
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
                 <Image
+                  width={7}
+                  height={7}
                   src="html.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
@@ -123,6 +133,8 @@ function Tech() {
                 className="h-[250px] w-[250px] bg-[#0F0C31] group cursor-pointer rounded-xl flex justify-center items-center"
               >
                 <Image
+                  width={7}
+                  height={7}
                   src="css.svg"
                   alt=""
                   className="svg-fill group-hover:w-[55%] duration-200 ease-in-out w-[45%]"
