@@ -18,14 +18,6 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
   const [color, setColor] = useState("text-[#F7F7F7]");
   const [clicked, setClicked] = useState(false);
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText("adlihidayat30@gmail.com");
-    setClicked(true);
-    setTimeout(() => {
-      setClicked(false);
-    }, 1500);
-  };
-
   const dateData = new Date();
   const weekDay = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = [
@@ -75,21 +67,13 @@ function NavBar({ position, Home, Projects, Tech, Contacts }: Props) {
   return (
     <div className=" w-screen fixed bottom-[5%] flex items-center justify-around">
       <div className={`space-x-6 hidden lg:flex`}>
-        <a className="w-7 h-7 relative">
-          <p
-            className={` text-white absolute duration-300 -top-10 -right-6 rounded-xl bg-black py-1 px-2 ${
-              !clicked && "hidden"
-            }`}
-          >
-            copied!
-          </p>
+        <a className="w-7 h-7 relative" href="mailto:adlihidayat30@gmail.com">
           <Image
             loading="eager"
             width={28}
             height={28}
             src={gmail}
             alt="gmail"
-            onClick={copyEmail}
             className={`w-7 h-7 ease-in-out cursor-pointer ${
               position === 1 && "svg-fill"
             } ${position === 4 && "hidden"}`}
