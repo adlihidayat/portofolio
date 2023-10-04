@@ -52,7 +52,7 @@ function Projects() {
         <ProjectItem
           textDetail={textIga}
           link={"https://iga-panggang.vercel.app/"}
-          img="/project/iga-panggang.png"
+          img="/project/iga-panggang.svg"
           title={"IGA PANGGANG WAK BUDI"}
           delay={0.7}
           position={1}
@@ -72,7 +72,7 @@ function Projects() {
         <ProjectItem
           textDetail={textSalfiyah}
           link={"https://adlihidayat.github.io/salfiyah/"}
-          img="/project/salfiyah.png"
+          img="/project/salfiyah.svg"
           title={"SALFIYAH"}
           delay={1.1}
           position={3}
@@ -82,7 +82,7 @@ function Projects() {
         <ProjectItem
           textDetail={textGlassmorphism}
           link={"https://adlihidayat.github.io/glassmorphism/"}
-          img="/project/glassmorphism.png"
+          img="/project/glassmorphism.svg"
           title={"GLASSMORPHISM"}
           delay={1.3}
           position={4}
