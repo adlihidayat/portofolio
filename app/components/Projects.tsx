@@ -54,7 +54,7 @@ function Projects() {
           link={"https://twitter-clone-adli.vercel.app/"}
           img="/project/twitter-clone.svg"
           title={"TWITTER CLONE"}
-          delay={0.9}
+          delay={0.6}
           position={1}
           active={view}
           setActive={() => setView(1)}
@@ -62,9 +62,9 @@ function Projects() {
         <ProjectItem
           textDetail={textIga}
           link={"https://iga-panggang.vercel.app/"}
-          img="/project/iga-panggang.svg"
+          img="/project/Iga-panggang.svg"
           title={"IGA PANGGANG WAK BUDI"}
-          delay={0.7}
+          delay={0.9}
           position={2}
           active={view}
           setActive={() => setView(2)}
