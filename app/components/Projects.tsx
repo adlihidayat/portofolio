@@ -62,7 +62,7 @@ function Projects() {
         <ProjectItem
           textDetail={textTwitter}
           link={"https://twitter-clone-adli.vercel.app/"}
-          img="/project/twitter-clone.png"
+          img="/project/twitter-clone.svg"
           title={"TWITTER CLONE"}
           delay={0.9}
           position={2}
