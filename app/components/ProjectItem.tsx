@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { easeInOut, motion, Variants } from "framer-motion";
 import Image from "next/image";
 

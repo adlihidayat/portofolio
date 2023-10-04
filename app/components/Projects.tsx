@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import ProjectItem from "./ProjectItem";
 import { motion, Variants } from "framer-motion";
