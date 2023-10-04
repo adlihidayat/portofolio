@@ -2,55 +2,36 @@ import React from "react";
 
 function Contacts() {
   return (
-    <div className="bg-[#202020] w-screen h-screen text-[#f7f7f7]">
-      <div className="flex w-screen h-[50%]">
-        <div className=" w-[50%] h-[100%] border-b border-r border-[#f7f7f7] flex flex-col items-end justify-end">
-          <div className="flex pb-4 pr-4">
-            <div className=" w-6 md:w-[50px] xl:w-[60px] h-6 md:h-[50px] xl:h-[60px] bg-[#f7f7f7] rounded-full"></div>
-            <div className=" w-6 md:w-[50px] xl:w-[60px] h-6 md:h-[50px] xl:h-[60px] border border-[#f7f7f7] rounded-full"></div>
-            <div className=" w-6 md:w-[50px] xl:w-[60px] h-6 md:h-[50px] xl:h-[60px] bg-[#f7f7f7] rounded-full"></div>
-            <div className=" w-6 md:w-[50px] xl:w-[60px] h-6 md:h-[50px] xl:h-[60px] bg-[#f7f7f7] rounded-full"></div>
-            <div className=" w-6 md:w-[50px] xl:w-[60px] h-6 md:h-[50px] xl:h-[60px] border border-[#f7f7f7] rounded-full"></div>
-          </div>
-        </div>
-        <div className="w-[50%] h-[100%] border-b border-[#f7f7f7] flex flex-col justify-end text-2xl xl:text-4xl font-light">
-          <div className="w-[100%} h-[25%] flex items-center ">
-            <a
-              className=" ml-5 cursor-pointer"
-              target="_blank"
-              href="https://www.instagram.com/adlihdyt/"
-            >
-              INSTAGRAM
-            </a>
-          </div>
-          <div className="w-[100%} h-[50%] ">
-            <div className="w-[100%} h-[50%] border-y border-[#f7f7f7] flex items-center ">
-              <a
-                className=" ml-5 cursor-pointer"
-                target="_blank"
-                href="https://www.linkedin.com/in/dhiya-adli-hidayat-3308b824a/"
-              >
-                LINKEDIN
-              </a>
-            </div>
-            <div className="w-[100%} h-[50%] flex items-center">
-              <a
-                className=" ml-5 cursor-pointer"
-                target="_blank"
-                href="https://github.com/adlihidayat"
-              >
-                GITHUB
-              </a>
-            </div>
-          </div>
-        </div>
+    <section
+      id="Contacts"
+      className="pb-40 w-screen px-[5%] py-20 md:px-[13%] text-[18px] md:text-2xl xl:text-3xl "
+    >
+      <a
+        href="mailto:adlihidayat30@gmail.com"
+        className="group hover:text-[#F0FE6E] bg-[#F0FE6E] hover:bg-transparent border-2 border-transparent hover:border-[#F0FE6E] py-4 px-7 rounded-full duration-500"
+      >
+        <span className="hidden md:inline-block md:group-hover:hidden w-60  xl:w-80 text-center">
+          CLICK ME PLS
+        </span>
+        <span className=" hidden md:group-hover:inline-block w-60  xl:w-80 text-center">
+          CONNECT WITH ME
+        </span>
+      </a>
+      <div className=" w-[100%] grid-cols-2 sm:hidden mt-20">
+        <button className=" rounded-xl bg-[#1c1c1c] text-white w-[48%] text-left pl-7 py-10 mr-[4%] mb-[4%]">
+          INSTAGRAM
+        </button>
+        <button className=" rounded-xl bg-[#1c1c1c] text-white w-[48%] text-left pl-7 py-10">
+          LINKEDIN
+        </button>
+        <button className=" rounded-xl bg-[#1c1c1c] text-white w-[48%] text-left pl-7 py-10 mr-[4%]">
+          GITHUB
+        </button>
+        <button className=" rounded-xl bg-[#1c1c1c] text-white w-[48%] text-left pl-7 py-10">
+          YOUTUBE
+        </button>
       </div>
-      <div>
-        <p className=" pl-5 sm:pl-[10%] pt-10 xl:pt-[90px] text-[32px] sm:text-[52px] lg:text-[72px] xl:text-[92px] font-medium">
-          Let's work together
-        </p>
-      </div>
-    </div>
+    </section>
   );
 }
 

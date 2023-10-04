@@ -1,115 +1,97 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import nameasy from "../../public/nameasy.png";
-import salfiyah from "../../public/salfiyah.png";
-import glassmorphism from "../../public/glassmorphism.png";
-import tictactoe from "../../public/tictactoe.png";
+import ProjectItem from "./ProjectItem";
+import { motion, Variants } from "framer-motion";
 
 function Projects() {
-  const [details, setDetails] = useState(0);
-  const vid = [
-    "none",
-    "https://firebasestorage.googleapis.com/v0/b/web-portofolio-abe83.appspot.com/o/nameasy.mp4?alt=media&token=c09d3222-d6c7-4fdc-b5ee-5b1a1cd07eae",
-    "https://firebasestorage.googleapis.com/v0/b/web-portofolio-abe83.appspot.com/o/glassmorphism.mp4?alt=media&token=3a9703ab-91d3-42d7-8c15-ad1f7629ae19",
-    "https://firebasestorage.googleapis.com/v0/b/web-portofolio-abe83.appspot.com/o/salfiyah.mp4?alt=media&token=b015995d-53bc-42de-9a56-e3c1b5ab57f5",
-    "https://firebasestorage.googleapis.com/v0/b/web-portofolio-abe83.appspot.com/o/tic%20tac%20toe.mp4?alt=media&token=a4e4518a-0c38-48d6-a5de-56ed9bd28df7",
-  ];
-  const title = ["none", "NAMEASY", "GLASSMORPHISM", "SALFIYAH", "TIC-TAC-TOE"];
-  const desc = [
-    "none",
-    "find the best name easier. this web give you name recommendation and you can copy it.",
-    "web that help you to design glassmophism. you can control the color, opacity, and blur. after get the perfect design, you can immediatly copy the css code",
-    "a fashion web. show off the new product and their collection. i used one page site, so the user doesnt need to wait while move to other section. i also use parallax effect to make it cooler.",
-    "just a normal tic tac toe game",
-  ];
-  const web = [
-    "none",
-    "https://adlihidayat.github.io/Nameasy/",
-    "https://adlihidayat.github.io/glassmorphism/",
-    "https://adlihidayat.github.io/salfiyah/",
-    "https://adlihidayat.github.io/tic-tac-toe/",
-  ];
+  const [view, setView] = useState<Number>(1);
+  const containerVariants: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 200,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+  const textIga = {
+    sm: "a website for restaurant. i used nextjs framework. the website is fully responsive",
+    xl: "a website for restaurant that will show the promo, menu available, contact. how to order, etc. i used nextjs, tailwind, typescript, etc. the website is fully responsive",
+  };
+
+  const textTwitter = {
+    sm: "twitter clone with auth, realtime dataBase, etc. i used nextjs firebase, and tailwind",
+    xl: "twitter clone with user auth with gmail, dataBase realtime, upload image, gif, and text feature, fully responsive, etc. i used nextjsfirebase, and tailwind",
+  };
+
+  const textSalfiyah = {
+    sm: "fashion brand web that look elegant and modern. i used nextjs and tailwind",
+    xl: "fashion brand web that look elegant and modern. this website is fully responsive, have parallax effect, single page, etc. i used nextjs and tailwind",
+  };
+
+  const textGlassmorphism = {
+    sm: "desgin website that help designer make glassmorphism simulation. i used ReactJS and tailwind",
+    xl: "desgin website that help designer make glassmorphism simulation. after finishing the design, you can copy the css code to the clipboard. i used ReactJS and tailwind",
+  };
 
   return (
-    <div className=" relative flex flex-col justify-center items-center space-y-10 h-screen -mt-6 md:flex-row md:space-x-20">
-      <h1 className=" text-3xl md:text-4xl lg:text-5xl font-semibold text-[#3B3B3B]">
-        Projects
-      </h1>
-      <div className="  flex justify-center space-x-1 md:space-x-2 w-[80%] sm:w-[500px] md:w-[600px] xl:w-[700px] 2xl:w-[900px]">
-        <div
-          onClick={() => setDetails(1)}
-          className="relative animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
-        >
-          <Image
-            fill={true}
-            loading="eager"
-            src={nameasy}
-            className="object-cover"
-            alt=""
-          />
-        </div>
-        <div
-          onClick={() => setDetails(2)}
-          className="relative animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
-        >
-          <Image
-            fill={true}
-            loading="eager"
-            src={glassmorphism}
-            className="object-cover"
-            alt=""
-          />
-        </div>
-        <div
-          onClick={() => setDetails(3)}
-          className="relative animate-project1-mobile xl:animate-project1-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200"
-        >
-          <Image
-            fill={true}
-            className="object-cover"
-            loading="eager"
-            src={salfiyah}
-            alt=""
-          />
-        </div>
-        <div
-          onClick={() => setDetails(4)}
-          className=" relative animate-project2-mobile xl:animate-project2-dekstop flex-1 md:hover:flex-none md:hover:w-[450px] lg:hover:w-[500px] xl:hover:w-[600px] 2xl:hover:w-[700px] duration-500 ease-in-out h-80 sm:h-[500px] xl:h-[600px] 2xl:h-[700px] bg-slate-200 mt-10"
-        >
-          <Image
-            fill={true}
-            loading="eager"
-            src={tictactoe}
-            className="object-cover"
-            alt=""
-          />
-        </div>
+    <section
+      id="Projects"
+      className=" py-20 xl:py-0 w-screen xl:h-[80%] flex flex-col sm:flex-row items-end sm:items-center xl:items-center justify-center space-y-10 sm:space-x-6 md:space-x-20 px-5 xl:pt-40"
+    >
+      <motion.h1
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className=" w-[140px]  2xl:w-[350px] text-white text-5xl md:text-7xl 2xl:text-9xl font-bold text-right"
+      >
+        PROJ ECT.
+      </motion.h1>
+      <div className=" flex flex-col items-end space-y-5 w-[100%] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[650px] 2xl:w-[700px]">
+        <ProjectItem
+          textDetail={textIga}
+          link={"https://iga-panggang.vercel.app/"}
+          img="/project/iga-panggang.png"
+          title={"IGA PANGGANG WAK BUDI"}
+          delay={0.7}
+          position={1}
+          active={view}
+          setActive={() => setView(1)}
+        />
+        <ProjectItem
+          textDetail={textTwitter}
+          link={"https://twitter-clone-adli.vercel.app/"}
+          img="/project/twitter-clone.png"
+          title={"TWITTER CLONE"}
+          delay={0.9}
+          position={2}
+          active={view}
+          setActive={() => setView(2)}
+        />
+        <ProjectItem
+          textDetail={textSalfiyah}
+          link={"https://adlihidayat.github.io/salfiyah/"}
+          img="/project/salfiyah.png"
+          title={"SALFIYAH"}
+          delay={1.1}
+          position={3}
+          active={view}
+          setActive={() => setView(3)}
+        />
+        <ProjectItem
+          textDetail={textGlassmorphism}
+          link={"https://adlihidayat.github.io/glassmorphism/"}
+          img="/project/glassmorphism.png"
+          title={"GLASSMORPHISM"}
+          delay={1.3}
+          position={4}
+          active={view}
+          setActive={() => setView(4)}
+        />
       </div>
-      {details !== 0 && (
-        <div className="fixed -top-10 z-40 w-screen h-screen md:-left-20 ">
-          <div className=" z-50 bg-[#282828] md:bg-transparent md:bg-gradient-to-b md:from-transparent md:to-black absolute bottom-0 w-screen h-auto flex flex-col md:flex-row md:justify-center md:space-x-10 space-y-5 items-center pt-16 pb-10 rounded-tl-[40px] rounded-tr-[40px] md:rounded-tl-[0px] md:rounded-tr-[0px]">
-            <div className=" bg-slate-400 w-[80%] md:w-[400px] h-[180px] md:h-[200px] ">
-              <video autoPlay loop src={vid[details]} />
-            </div>
-            <div className="flex flex-col space-y-3 w-[80%] text-[#F7F7F7] md:w-[500px] xl:w-[600px]">
-              <h1 className=" text-xl md:text-2xl font-semibold">
-                {title[details]} (PERSONAL PROJECT)
-              </h1>
-              <p>{desc[details]}</p>
-              <a href={web[details]}>
-                <button className=" text-sm md:text-base py-[6px] md:py-2 w-[100px] md:w-[115px] bg-[#FF4A4A] sm:hover:bg-[#0F0C31] duration-300 ease-in-out   rounded-full font-semibold">
-                  VISIT SITE
-                </button>
-              </a>
-            </div>
-          </div>
-          <div
-            className=" h-screen w-screen bg-black md:bg-transparent opacity-30 absolute z-40"
-            onClick={() => setDetails(0)}
-          ></div>
-        </div>
-      )}
-    </div>
+    </section>
   );
 }
 
