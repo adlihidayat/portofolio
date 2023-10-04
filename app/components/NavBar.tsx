@@ -5,14 +5,6 @@ import linkedin from "../../public/linkedIn.svg";
 import github from "../../public/github.svg";
 import gmail from "../../public/gmail.svg";
 
-type Props = {
-  Home: (event: React.MouseEvent<HTMLElement>) => void;
-  Projects: (event: React.MouseEvent<HTMLElement>) => void;
-  Tech: (event: React.MouseEvent<HTMLElement>) => void;
-  Contacts: (event: React.MouseEvent<HTMLElement>) => void;
-  position: any;
-};
-
 function NavBar() {
   const [bgPosMobile, setBgPosMobile] = useState("-left-[9.3%]");
   const [color, setColor] = useState("text-[#F7F7F7]");
