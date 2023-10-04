@@ -55,9 +55,9 @@ function Projects() {
           img="/project/twitter-clone.svg"
           title={"TWITTER CLONE"}
           delay={0.9}
-          position={2}
+          position={1}
           active={view}
-          setActive={() => setView(2)}
+          setActive={() => setView(1)}
         />
         <ProjectItem
           textDetail={textIga}
@@ -65,9 +65,9 @@ function Projects() {
           img="/project/iga-panggang.svg"
           title={"IGA PANGGANG WAK BUDI"}
           delay={0.7}
-          position={1}
+          position={2}
           active={view}
-          setActive={() => setView(1)}
+          setActive={() => setView(2)}
         />
         <ProjectItem
           textDetail={textSalfiyah}
