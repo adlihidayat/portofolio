@@ -50,16 +50,6 @@ function Projects() {
       </motion.h1>
       <div className=" flex flex-col items-end space-y-5 w-[100%] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[650px] 2xl:w-[700px]">
         <ProjectItem
-          textDetail={textIga}
-          link={"https://iga-panggang.vercel.app/"}
-          img="/project/iga-panggang.svg"
-          title={"IGA PANGGANG WAK BUDI"}
-          delay={0.7}
-          position={1}
-          active={view}
-          setActive={() => setView(1)}
-        />
-        <ProjectItem
           textDetail={textTwitter}
           link={"https://twitter-clone-adli.vercel.app/"}
           img="/project/twitter-clone.svg"
@@ -68,6 +58,16 @@ function Projects() {
           position={2}
           active={view}
           setActive={() => setView(2)}
+        />
+        <ProjectItem
+          textDetail={textIga}
+          link={"https://iga-panggang.vercel.app/"}
+          img="/project/iga-panggang.svg"
+          title={"IGA PANGGANG WAK BUDI"}
+          delay={0.7}
+          position={1}
+          active={view}
+          setActive={() => setView(1)}
         />
         <ProjectItem
           textDetail={textSalfiyah}
